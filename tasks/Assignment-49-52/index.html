@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>   /* part of Q / 02*/
+        .item {
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+    
+        .item .partial-details {
+          display: block;
+        }
+    
+        .item .full-details {
+          display: none;
+        }
+      </style>
+
+      <style>   /* part of question 03: */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .hidden-form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form onsubmit="displayFormData(event)">   <!--part of question 01:-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+        
+        <button type="submit">Submit</button>
+      </form>
+      <pre id="formOutput"></pre>
+
+      <div class="item" id="item1">  <!-- pary of question 02: -->
+        <h2>Item 1</h2>
+        <p class="partial-details">I'm Arish.</p>
+        <p class="full-details">I am Eman.I am 21 years old.I have passed Bachlors of Arts.And now i'm doing web development course. </p>
+        <button onclick="showFullDetails('item1')">Read more</button>
+      </div>
+
+      <table id="student-table">   <!--Part of question 03: -->
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10th</td>
+            <td>
+                <button onclick="deleteRow(this)">Delete</button>
+                <button onclick="editRow(this)">Edit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9th</td>
+            <td>
+                <button onclick="deleteRow(this)">Delete</button>
+                <button onclick="editRow(this)">Edit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>10th</td>
+            <td>
+                <button onclick="deleteRow(this)">Delete</button>
+                <button onclick="editRow(this)">Edit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>18th</td>
+            <td>
+                <button onclick="deleteRow(this)">Delete</button>
+                <button onclick="editRow(this)">Edit</button>
+            </td>
+        </tr>
+        
+        <form id="student-form">
+            <input type="number" placeholder="Index" id="index-input" required>
+            <input type="text" placeholder="Name" id="name-input" required>
+            <input type="number" placeholder="Class" id="class-input" required>
+            <button type="submit">Add</button>
+        </form>
+    
+        <form id="hidden-form" class="hidden-form">
+            <input type="hidden" id="hidden-row-index">
+            <input type="number" placeholder="Index" id="hidden-index-input" required>
+            <input type="text" placeholder="Name" id="hidden-name-input" required>
+            <input type="number" placeholder="Class" id="hidden-class-input" required>
+            <button type="submit">Update</button>
+        </form>
+    </table>
+
+      
+    <script src="./assignment-49-52.js"></script>
+</body>
+</html>
