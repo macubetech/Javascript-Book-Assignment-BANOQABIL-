@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignemnt 53-57 Events
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>
+        Assignemnt 53-57 Events
+    </h3>
+    <h1>Assigment-53-57____Events</h1>
+    <hr>
+
+    <div>
+        <img src="https://cdn-icons-png.flaticon.com/256/11074/11074673.png"
+            alt="" id="image1" onclick="openModal('image1')">
+        <img src="https://cdn-icons-png.flaticon.com/256/11074/11074637.png"
+            alt="" id="image2" onclick="openModal('image2')">
+        <img src="https://cdn-icons-png.flaticon.com/256/11074/11074718.png"
+            alt="" id="image3" onclick="openModal('image3')">
+        <img src="https://cdn-icons-png.flaticon.com/256/11074/11074771.png"
+            alt="" id="image4" onclick="openModal('image4')">
+
+
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="modal-content">
+                <img id="modalImg">
+            </span>
+        </div>
+
+
+        <hr>
+    </div>
+
+    <div>
+        <h2>Paragraph Zoom</h2>
+        <p id="zoomParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint minus quod non.
+        </p>
+
+        <button id="zoomInBtn" onclick="zoomIn()">Zoom In (+)</button>
+        <button id="zoomOutBtn" onclick="zoomOut()">Zoom Out (-)</button>
+    </div>
+
+    <!-- END -->
+
+
+
+    <script src="app.js"></script>
+  </script>
+</body>
+</html>

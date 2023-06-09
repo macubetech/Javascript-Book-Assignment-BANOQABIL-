@@ -1,0 +1,33 @@
+// js book assignment 
+43-48
+function myalert(){
+alert("Thank you for purchasing a phone from us")
+}
+
+
+function forDelete(){
+    var mydelete= document.getElementById("rowid")
+mydelete.remove()
+
+}
+
+function changePic(){
+    document.getElementById("mypic").src="https://www.freeiconspng.com/thumbs/bulb/clip-art-yellow-light-bulb-png-8.png"
+}
+
+
+function changePic1(){
+    document.getElementById("mypic").src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIAAgAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwIBB//EADcQAAEDAgQDAwoFBQAAAAAAAAEAAgMEEQUSITEGQVETInEUIzJSYYGRocHRBxVCQ7EzU2Jy8P/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9xREQEREAqJWYhBS91xzScmN3UHG8W8lIpqcjt3C5PqD7qpp+8bm5cTqeqCwmxKrqNIGiIdRqVHfS1sx85USa9XFWdDTNLdRqpZjDWkWugzZwueI5oqiaN2/ckIXeCtxKj0kf5QweuNfirwwFwuoc0YAIsEHWgxemq3CPWOb1H8/A81YrGYpS3GZg1CsOHMbdPJ5DWOvOB5t5/WOh9qDRoiICIiAiIgLjWVDaSllqJPRjaXH2rsqHjKYswtkQP9aZrT4C5+gQZyKSSomfNKbySOzOKuqCLOWtHNVNG0aLTYWxrWg2QT6eHsm2XTIbr4HP1s0E+3RdATbXdB5JIGyiTjcqW+/IXUOocdRlAPLf7IKmsGhWbrA+Kds0RtJG4OaehC0lad1R1YvdBuMOqm1tFDUs2kYDboeYUlUPBshdhT4z+1M5o8DY/VXyAiIgIiICz3GMRkp6Yj9MhPyWhVVxLGXYVI8A3iIfp02PyKDM02hCv8OksAFnYnWsVaUc1raoNIx3eab6HRdlAiqGiEuOuXVShIDsUHQqvqn3mcOTW/MqU+SwVVPMC1zgfSJP0+iCDWPvcKpn5qZUyXJUGUkm3VBouDWFtHUuOzptPgFoFCwimFLh8UdtSMzvEqagIiICIiAvMkbZY3RyNDmOBa4HmCvSIMDPTPoqh9PJe8Zs0nm3kfgusMlloeIKDyiDt4x5xg19oWWBLXW9qC8pZ76HVT6B7jAGuNy27fgbKipH98X2utTSQsYwuA0dYj4BBErXujgc5vpW08eSqah2RoZyaLLQ10QlhtoLEE+7VZesd3igiSuuVNwKh8rqw9483Hr4lV1i94aNSTYLZ4TRtpKVrQO8RqgnDRERAREQEREBERB8IuLHZY/H6dlNWWjFgdVsVk+Kjlr2h3NoI/73IK+nfYhaR+JxxRRFzw0ZQsqw2K9VUrnQgD12fDMEGlbiUM9w1+bwVDVSZ3khcaaUsa+/91591yvErunuQT8Cp/KMQGbYbLZjRZDhR5fikjRqGxk/wtegIiICIiAiIgIiICpeJ8NdXUfaw2E0F3C5sHDmFdLnOAYJAXBoLSC48tN0H51QOlrIBLBE+RnrNF10kc6BjTO0xnTR4su/BsLYnvp2VMVRAx7mxyt2kANg4L3xwGxGMNDyT6mn8II0eeeN3YsL9/QF18qIaiGm7SWNzBl0zaaqdw2GtpQXyC/Qt+pXvifI7BKhsUg7QgAZTrvrbdBYcFUBhonVr9TUgFn+nX3/AGWkUTCrfllLlgdTtETQIn7sFtipaAiIgIiICIiAiIgLy+4abAE8gea9L48XaR/CDAcJMn/MKmR9CIXeUyhzWElsbsxuAegK68duyOiJm7LXQdVD4dfBTYnVsM07HMqZGiOVl3WzGxdrvZTeLL1PZuhYx45lxt90DA5nTU0TW4WHBv7pLR797qbxJGH4FL2zrN07jBc+7b5KmwqWhp7MkxN7ZecMcjPoLq2x5jXYE+SFwiJtaR9nOOumh3vtZBpcJLXYZSllQ6oaYm2mdu/TdS1Hw9srKGBtQ2NkojAe2MWaDbYKQgIiICIiAiIgIiIPLnhu6izV8UXpFSJI84sVCnwxk26DM8SNw+ueaqB7Ya5rbZ+Ug6O+/JY2L8QIcDnfFieE1UhAtZrmOHiDdfo1RwxDLe5Kz2JfhxBWvJc/Q8kGaq/xQpsVLYsNweqjfsM5Zc/ArWcJsByVuL1Jmn3jpw68cPt/yd7dhy6qDQ/hhT0kgc19gOS1dDw5HTMAudEFxFVMk9EruHXUWCjbENCpQbZB9REQEREH/9k="
+}
+// Assignment 43 - 48
+var count = 0
+var countElement = document.getElementById("count")
+countElement.innerText = count
+function increase() {
+  countElement.innerText = count++
+}
+function decrease() {
+  if (count >= 0) {
+    countElement.innerText = count--
+  }
+}

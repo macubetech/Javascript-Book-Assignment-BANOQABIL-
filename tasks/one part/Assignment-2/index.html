@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Message on web page</title>
+  <script>
+    // Define a function to display the message
+    function displayMessage() {
+      var message = "Hello! Welcome to our web page arish";
+      var messageElement = document.getElementById("message");
+      messageElement.textContent = message;
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to our home page</h1>
+  <p id="message"></p>
+  
+  <script>
+    // Call the displayMessage() function to display the message
+    displayMessage("hello");
+  </script>
+</body>
+</html>

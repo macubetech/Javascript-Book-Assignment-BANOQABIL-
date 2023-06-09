@@ -1,0 +1,1 @@
+alert(' welcome   i can run JS book assignment through browser console')
